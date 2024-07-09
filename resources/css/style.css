@@ -1,13 +1,18 @@
 Universal Styles
 
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Mono", monospace;
   font-size: 16px;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+
+}
 .main-content {
   position: relative;
-  top: 5.3125rem; /* To offset for fixed header. */
+  top: 5.349375rem; /* To offset for fixed header. */
 
 }
 
@@ -33,13 +38,13 @@ html {
 @media only screen and (max-width: 760px) {
   .main-content {
     top: 3.9118rem;
-    z-index: -1;
   }
 }
 
 /* Header */
 
 header {
+  font-family: "Roboto Mono", monospace;
   position: fixed;
   width: 100%;
   border-bottom: solid 1px #c6c1c1;
@@ -49,12 +54,12 @@ header {
 
 header .content {
   display: flex;
-  align-items: center;
   padding: 1.875rem;
 }
 
 header .logo {
   flex: 1;
+  font-size: 1.5rem;
 }
 
 header nav ul {
@@ -62,7 +67,7 @@ header nav ul {
 }
 
 nav li {
-  padding-left: 3.5rem;
+  padding-left: 3.5rem; 
 }
 
 nav a {
@@ -70,11 +75,14 @@ nav a {
   line-height: 1.6;
   font-size: 1rem;
   color: #4a4a4a;
-}
+}     
 
 header .icon {
   width: 1rem;
   padding-left: .75rem;
+  float: right;
+  padding-top: .3rem;
+  
 }
 
 header .mobile {
@@ -94,13 +102,12 @@ header .mobile {
 
   header .content {
     padding: 1rem 0;
-
   }
 
   header .mobile ul {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    /* align-content: center; */
     width: 100%;
   }
 
@@ -122,7 +129,7 @@ header .mobile {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  height: 43.5rem;
+  height: 37.899375rem;
   background: url('../images/banner-landingpage.jpg') no-repeat center/cover;
   padding: 10.625rem 0 0 6.25rem;
 }
@@ -141,6 +148,7 @@ header .mobile {
   font-size: 1.25rem;
   line-height: 1.4;
   color: white;
+  top: 40rem;
 }
 
 #sign-up-cta h1 {
@@ -240,16 +248,14 @@ header .mobile {
 }
 
 .feature h2 {
-  padding-bottom: .5rem;
-  font-size: 2.25rem;
-  font-weight: bold;
+  font: bold 2.25rem 'Roboto';
+  padding: 2.5rem 0 .5rem 0;
   color: #4a4a4a;
 }
 
 .feature h3 {
-  font-size: 1rem;
+  font: 300 1rem 'Roboto';
   line-height: 1.2;
-  font-weight: 300;
   color: #4a4a4a;
 }
 
@@ -275,6 +281,9 @@ header .mobile {
   .feature {
     margin: 0;
     padding: 1.25rem 1rem 0 1rem;
+  }
+  .feature .center {
+    padding: 1rem 0 1.875rem 0;
   }
 }
 
